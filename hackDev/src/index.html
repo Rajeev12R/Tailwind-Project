@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap"
+  rel="stylesheet" />
+  <style>
+    * {
+      font-family: 'Source Sans Pro';
+    }
+
+  </style>
+</head>
+
+<body>
+  <header
+    class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+    <a href="#" class="flex cursor-pointer items-center whitespace-nowrap text-2xl font-black">
+      <img src="/src/icon.png" style="width: 90px; height: 90px;" alt="" srcset="" />
+    </a>
+    <input type="checkbox" class="peer hidden" id="navbar-open" />
+    <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+      <span class="sr-only">Toggle Navigation</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <nav aria-label="Header Navigation"
+      class="flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all peer-checked:mt-8 peer-checked:max-h-56 md:ml-24 md:max-h-full md:flex-row md:items-start ">
+      <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+        <li class="font-bold md:mr-12"><a href="#">Home</a></li>
+        <li class="md:mr-12"><a href="#">Our Team</a></li>
+        <li class="md:mr-12"><a href="#">Events</a></li>
+        <li class="md:mr-12"><a href="#">News</a></li>
+        <li class="md:mr-12"><a href="#">Resources</a></li>
+        <li class="md:mr-12">
+          <button
+            class="rounded-full border-2 border-blue-500 px-6 py-1 text-blue-600 transition-colors hover:bg-blue-500 hover:text-white">Contact Us</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <div class="flex min-h-90vh w-screen">
+    <div class="relative my-auto mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
+      <!-- Left Column -->
+      <div class="mx-auto flex w-full max-w-xl lg:max-w-screen-xl">
+        <div class="mb-16 lg:my-auto lg:max-w-lg">
+          <div class="mb-6 max-w-xl">
+            <h2 class="mb-6 max-w-lg text-5xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">
+              Seneca Software Developers Club
+            </h2>
+            <p class="text-base text-gray-700 md:text-lg">
+              Where innovation meets community.</p>
+          </div>
+          <div class="flex items-center">
+            <a href="/"
+              class="bg-sky-400a mr-6 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-sky-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-sky-300 outline-none transition duration-200 hover:scale-110 hover:bg-sky-500 focus:ring">Join
+              Us</a>
+            <a href="/"
+              class="inline-flex items-center font-semibold text-sky-400 transition-colors duration-200 hover:text-lime-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd" />
+              </svg>
+              Join Us</a>
+          </div>
+        </div>
+      </div>
+      <!-- /Left Column -->
+
+      <!-- Right Column -->
+      <div class="flex h-full w-full space-x-3 overflow-hidden md:justify-end">
+        <!-- Col 2 -->
+        <div class="hidden w-56 items-center space-y-3 lg:flex">
+          <div class="overflow-hidden rounded-xl bg-yellow-400">
+            <img class="h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="" />
+          </div>
+        </div>
+        <div class="w-full flex-col space-y-3 rounded-xl py-4 lg:flex lg:w-80">
+          <div class="h-40 overflow-hidden rounded-xl bg-green-600/60">
+            <img class="mx-auto h-full w-full object-cover" src="/src/image_upload_599694_2_1_129121459.png" alt="" />
+          </div>
+          <div class="h-40 overflow-hidden rounded-xl bg-pink-600/60">
+            <img class="mx-auto h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="" />
+          </div>
+          <div class="h-40 overflow-hidden rounded-xl bg-blue-600/60">
+            <img class="mx-auto h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1342&q=80"
+              alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- /Right Column -->
+    </div>
+  </div>
+  <p class="text-gradient-to-r from-zinc-900 to-sky-50 text-center text-4xl p-5 ">Know More About Us</p>
+
+
+
+  <section class="bg-gradient-to-r from-zinc-100 to-sky-100">
+    <div
+      class="mx-auto grid max-w-lg gap-x-8 gap-y-12 px-4 py-32 md:max-w-screen-xl md:grid-cols-2 md:px-8 lg:grid-cols-3">
+            <div class="border-white/40 relative border-4 px-4 pt-14 pb-8 ">
+              <div class="absolute -top-8 left-8 bg-blue-900 px-4 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-16 w-16">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <p class="mb-3 font-medium uppercase text-gradient-to-r from-slate-800 to-neutral-700">Purpose</p>
+              <p class="text-gradient-to-r from-slate-800 to-neutral-700">The mission of the Seneca Software Developers Club
+                is to provide an inclusive, collaborative and educational environment for students to explore and develop
+                their software development skills. We aim to foster an environment of creativity, learning, and
+                problem-solving where members can grow both professionally and personally.</p>
+            </div>
+            <div class="border-white/40 relative border-4 px-4 pt-14 pb-8">
+              <div class="absolute -top-8 left-8 bg-blue-900 px-4 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-16 w-16">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <p class="mb-3 font-medium uppercase text-gradient-to-r from-slate-800 to-neutral-700">Goals</p>
+              <p class="text-gradient-to-r from-slate-800 to-neutral-700">The goals of the Seneca Software Developers Club are
+                to create opportunities for students to collaborate on projects, attend workshops and events, and build a
+                strong network within the tech community. Our aim is to provide access to resources and mentorship
+                opportunities that will help members achieve their full potential in the field of software development.
+                Additionally, we aim to provide a space for members to learn about new technologies, discuss current industry
+                trends, and connect with industry professionals.</p>
+            </div>
+      <div class="border-white/40 relative border-4 px-4 pt-14 pb-8">
+        <div class="absolute -top-8 left-8 bg-blue-900 px-4 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-16 w-16">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+          </svg>
+        </div>
+        <p class="mb-3 font-medium uppercase text-gradient-to-r from-slate-800 to-neutral-700">Community Engagement</p>
+        <p class="text-gradient-to-r from-slate-800 to-neutral-700">Community Engagement: The Seneca Software Developers
+          Club is dedicated to creating a vibrant and diverse community of software developers. We believe that
+          community engagement is a critical part of our mission, and we strive to create opportunities for members to
+          give back through volunteer and outreach programs. By creating a welcoming and inclusive environment for all
+          members, we hope to inspire and empower the next generation of software developers, and build a strong and
+          sustainable community that supports the growth and success of its members.</p>
+      </div>
+
+     
+    </div>
+  </section>
+
+
+
+
+
+</body>
+
+</html>
